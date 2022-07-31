@@ -1,0 +1,48 @@
+.login-form,
+.api-login-container,
+#user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.inner-container {
+    padding: 30px;
+}
+
+#remember-box {
+    display: flex;
+    flex-direction: row;
+}
+
+#remember-box label {
+    margin: 0px 0px 2px 5px;
+}
+
+#form-next,
+#form-back {
+    font-size: 20px;
+    margin: 20px 0px 0px 0 !important;
+    padding: 10px 20px
+}
+
+input[type="password"], input[type="text"] {
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.3em !important;
+    font-weight: 700;
+    height: 40px;
+    outline: none;
+    overflow: visible;
+    background: #E8F0FE;
+    margin: 4px 0px;
+}
+input[type="checkbox"] {
+    width: 30px;
+}
+#forgot-password, #remember-box {
+    font-size: 1.3em;
+}
+#forgot-password {
+    margin: 10px 0;
+    padding-left: 4px;
+}

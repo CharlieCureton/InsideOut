@@ -1,0 +1,202 @@
+.inner-register-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#primary-title {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: solid #aaa;
+    width: 100%;
+}
+
+#avatar {
+    border: solid transparent;
+    height: 125px;
+    margin: 0 10px;
+    position: relative;
+    width: 125px
+}
+
+#avatar-img {
+    z-index: 19
+}
+
+#avatar-overlay {
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 20
+}
+
+#info {
+    margin-left: 50px;
+    max-width: 500px;
+    width: 100%
+}
+
+#name {
+    height: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+    display: flex;
+    max-width: 500px;
+}
+
+#name input {
+    margin: 0px 4px;
+}
+
+input {
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.3em !important;
+    font-weight: 700;
+    width: 100%;
+    margin: 3px 4px !important;
+    padding-left: 12px;
+    outline: none;
+    overflow: visible;
+    background: none;
+}
+
+#flag {
+    display: flex;
+    flex-direction: column;
+    left: -49px;
+    position: relative;
+    top: 133px
+}
+
+.dd-wrapper {
+    position: absolute;
+    right: -10px;
+    z-index: 3000;
+}
+
+.dd-wrapper * {
+    z-index: 200;
+}
+
+.dd-selected {
+    border: solid 1px #aaa;
+    border-radius: 4px;
+    display: flex;
+    font-size: 20px;
+    height: 46.6px;
+    padding: 0;
+    width: 70px
+}
+
+.dd-selected img {
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    width: 70px !important
+}
+
+.dd-selected .caret-down {
+    position: absolute;
+    right: -30px
+}
+
+.dd-items-wrapper {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: -2px 4px 6px 2px #cccc;
+    height: 350px;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 2px
+}
+
+.dd-item.active {
+    background: #ececc2
+}
+
+.dd-item {
+    border-radius: 5px;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 3px;
+    padding: 4px 5px;
+    text-align: left
+}
+
+.dd-wrapper img {
+    border-radius: 4px;
+    width: 50px
+}
+
+.dd-item:hover {
+    background: #cccc
+}
+
+#about-textarea {
+    border: solid 2px #aaa;
+    border-radius: 5px;
+    font-size: 17px;
+    min-height: 220px;
+    padding: 15px;
+    resize: none;
+    width: 100%
+}
+
+#form-next,
+#form-back {
+    font-size: 20px;
+    margin: 7px 0px 0px 0 !important;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 585px) {
+    #info {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .inner-register-form {
+        justify-content: center;
+    }
+
+    #info {
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #info input {
+        width: 100%;
+        text-align: center;
+        margin: 1px 0;
+    }
+
+    #name {
+        margin-bottom: 42px;
+    }
+}
+
+#privacy-setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+#privacy-setting select {
+    padding: 15px;
+    border-radius: 7px;
+    outline: none;
+    border: solid #aaa;
+}

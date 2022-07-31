@@ -1,0 +1,40 @@
+.Land-header {
+    text-align: center;
+    min-height: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App a {
+    text-decoration: none;
+}
+
+.Land-header p {
+    max-width: 700px;
+}
+
+#get-started-btn,
+#login-btn {
+    margin-top: 20px;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 533px) {
+    .Land-header {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 552px) {
+    #login-btn {
+        margin-left: -15px;
+    }
+}

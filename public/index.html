@@ -1,0 +1,37 @@
+<!-- (c) Charlie Cureton 2022 -->
+<!-- Site built with React -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" id="favicon" href="%PUBLIC_URL%/favicon-pink.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="A safe and trusted space to share your experience as a member of the LGBTQ+ community and seek advise and support from others."
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+     <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <title>InsideOut</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
